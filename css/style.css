@@ -23,11 +23,12 @@
 
 .navbar {
   background-color: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2000;
 }
 .navbar nav {
   background-color: #FFF !important;
-  position: relative;
-  z-index: 980;
 }
 
 section.hero {
@@ -338,6 +339,285 @@ footer hr {
 footer .bottom-header {
   color: #FFF;
   margin-top: 0px;
+}
+
+section.main {
+  padding: 50px 0px 100px 0px;
+  background-color: #007bff;
+}
+section.main .main-header {
+  margin-bottom: 60px;
+}
+section.main .main-header h4, section.main .main-header h3, section.main .main-header h1 {
+  color: #FFF;
+}
+section.main h4 {
+  margin: 0px;
+}
+section.main h3 {
+  margin-top: 10px;
+}
+section.main .main-card {
+  background-color: #FFF;
+  transition: box-shadow 0.1s linear, transform 0.1s linear;
+  display: block;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 35px 50px;
+}
+section.main .main-card:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
+}
+section.main .main-card .main-card-header-1 {
+  margin-bottom: 100px;
+}
+section.main .main-card .main-card-header-1 h3 {
+  color: #007bff;
+  margin-bottom: 0px;
+}
+section.main .main-card .main-card-header-2 {
+  margin-bottom: 50px;
+}
+section.main .main-card .main-card-header-2 h3 {
+  color: #007bff;
+  margin-bottom: 0px;
+}
+section.main .main-card .main-img-1 {
+  width: 100%;
+  margin-bottom: 80px;
+}
+section.main .main-card .main-img-2 {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+section.login, section.method, section.pass-code,
+section.new-pass, section.pass-changed,
+section.signup-marketer, section.signup-trader {
+  padding: 50px 0px;
+}
+section.login .uk-first-column, section.method .uk-first-column, section.pass-code .uk-first-column,
+section.new-pass .uk-first-column, section.pass-changed .uk-first-column,
+section.signup-marketer .uk-first-column, section.signup-trader .uk-first-column {
+  padding-right: 0px;
+  width: 65%;
+}
+section.login .uk-card, section.method .uk-card, section.pass-code .uk-card,
+section.new-pass .uk-card, section.pass-changed .uk-card,
+section.signup-marketer .uk-card, section.signup-trader .uk-card {
+  box-shadow: none;
+  overflow: hidden;
+  margin: auto;
+  border: 1px solid rgba(0, 123, 255, 0.5);
+  border-radius: 12px;
+}
+@media (max-width: 1199px) {
+  section.login .uk-card .content, section.method .uk-card .content, section.pass-code .uk-card .content,
+  section.new-pass .uk-card .content, section.pass-changed .uk-card .content,
+  section.signup-marketer .uk-card .content, section.signup-trader .uk-card .content {
+    width: 100% !important;
+  }
+}
+section.login .uk-card .card-headers-container, section.method .uk-card .card-headers-container, section.pass-code .uk-card .card-headers-container,
+section.new-pass .uk-card .card-headers-container, section.pass-changed .uk-card .card-headers-container,
+section.signup-marketer .uk-card .card-headers-container, section.signup-trader .uk-card .card-headers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+section.login .uk-card .card-headers-container h3, section.method .uk-card .card-headers-container h3, section.pass-code .uk-card .card-headers-container h3,
+section.new-pass .uk-card .card-headers-container h3, section.pass-changed .uk-card .card-headers-container h3,
+section.signup-marketer .uk-card .card-headers-container h3, section.signup-trader .uk-card .card-headers-container h3 {
+  color: #007bff;
+  margin: 0px;
+}
+section.login .uk-card form, section.method .uk-card form, section.pass-code .uk-card form,
+section.new-pass .uk-card form, section.pass-changed .uk-card form,
+section.signup-marketer .uk-card form, section.signup-trader .uk-card form {
+  margin-top: 100px;
+}
+section.login .uk-card form.signup-form, section.method .uk-card form.signup-form, section.pass-code .uk-card form.signup-form,
+section.new-pass .uk-card form.signup-form, section.pass-changed .uk-card form.signup-form,
+section.signup-marketer .uk-card form.signup-form, section.signup-trader .uk-card form.signup-form {
+  margin-top: 30px;
+}
+section.login .uk-card form.signup-form button, section.method .uk-card form.signup-form button, section.pass-code .uk-card form.signup-form button,
+section.new-pass .uk-card form.signup-form button, section.pass-changed .uk-card form.signup-form button,
+section.signup-marketer .uk-card form.signup-form button, section.signup-trader .uk-card form.signup-form button {
+  margin-top: 20px;
+}
+section.login .uk-card form input, section.login .uk-card form select, section.method .uk-card form input, section.method .uk-card form select, section.pass-code .uk-card form input, section.pass-code .uk-card form select,
+section.new-pass .uk-card form input,
+section.new-pass .uk-card form select, section.pass-changed .uk-card form input, section.pass-changed .uk-card form select,
+section.signup-marketer .uk-card form input,
+section.signup-marketer .uk-card form select, section.signup-trader .uk-card form input, section.signup-trader .uk-card form select {
+  border-radius: 12px;
+}
+section.login .uk-card form img, section.method .uk-card form img, section.pass-code .uk-card form img,
+section.new-pass .uk-card form img, section.pass-changed .uk-card form img,
+section.signup-marketer .uk-card form img, section.signup-trader .uk-card form img {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+section.login .uk-card form .forg-link, section.method .uk-card form .forg-link, section.pass-code .uk-card form .forg-link,
+section.new-pass .uk-card form .forg-link, section.pass-changed .uk-card form .forg-link,
+section.signup-marketer .uk-card form .forg-link, section.signup-trader .uk-card form .forg-link {
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+section.login .uk-card form .forg-link:hover, section.method .uk-card form .forg-link:hover, section.pass-code .uk-card form .forg-link:hover,
+section.new-pass .uk-card form .forg-link:hover, section.pass-changed .uk-card form .forg-link:hover,
+section.signup-marketer .uk-card form .forg-link:hover, section.signup-trader .uk-card form .forg-link:hover {
+  color: #007bff !important;
+}
+section.login .uk-card form button, section.login .uk-card form a, section.method .uk-card form button, section.method .uk-card form a, section.pass-code .uk-card form button, section.pass-code .uk-card form a,
+section.new-pass .uk-card form button,
+section.new-pass .uk-card form a, section.pass-changed .uk-card form button, section.pass-changed .uk-card form a,
+section.signup-marketer .uk-card form button,
+section.signup-marketer .uk-card form a, section.signup-trader .uk-card form button, section.signup-trader .uk-card form a {
+  margin-top: 50px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+}
+section.login .uk-card form .acc-link a, section.method .uk-card form .acc-link a, section.pass-code .uk-card form .acc-link a,
+section.new-pass .uk-card form .acc-link a, section.pass-changed .uk-card form .acc-link a,
+section.signup-marketer .uk-card form .acc-link a, section.signup-trader .uk-card form .acc-link a {
+  text-decoration: none;
+  color: #222;
+}
+section.login .uk-card form .code-container, section.method .uk-card form .code-container, section.pass-code .uk-card form .code-container,
+section.new-pass .uk-card form .code-container, section.pass-changed .uk-card form .code-container,
+section.signup-marketer .uk-card form .code-container, section.signup-trader .uk-card form .code-container {
+  display: flex;
+  justify-content: space-between;
+}
+section.login .uk-card form .code-container .code-input, section.method .uk-card form .code-container .code-input, section.pass-code .uk-card form .code-container .code-input,
+section.new-pass .uk-card form .code-container .code-input, section.pass-changed .uk-card form .code-container .code-input,
+section.signup-marketer .uk-card form .code-container .code-input, section.signup-trader .uk-card form .code-container .code-input {
+  width: 60px;
+  text-align: center;
+  font-size: 2rem;
+  height: 60px;
+}
+@media (min-width: 640px) {
+  section.login .uk-card form .code-container .code-input, section.method .uk-card form .code-container .code-input, section.pass-code .uk-card form .code-container .code-input,
+  section.new-pass .uk-card form .code-container .code-input, section.pass-changed .uk-card form .code-container .code-input,
+  section.signup-marketer .uk-card form .code-container .code-input, section.signup-trader .uk-card form .code-container .code-input {
+    width: 100px;
+    text-align: center;
+    font-size: 2rem;
+    height: 100px;
+  }
+}
+section.login .uk-card form .uk-form-controls label, section.method .uk-card form .uk-form-controls label, section.pass-code .uk-card form .uk-form-controls label,
+section.new-pass .uk-card form .uk-form-controls label, section.pass-changed .uk-card form .uk-form-controls label,
+section.signup-marketer .uk-card form .uk-form-controls label, section.signup-trader .uk-card form .uk-form-controls label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+section.login .uk-card form .uk-form-controls label input, section.method .uk-card form .uk-form-controls label input, section.pass-code .uk-card form .uk-form-controls label input,
+section.new-pass .uk-card form .uk-form-controls label input, section.pass-changed .uk-card form .uk-form-controls label input,
+section.signup-marketer .uk-card form .uk-form-controls label input, section.signup-trader .uk-card form .uk-form-controls label input {
+  margin-left: 10px;
+}
+section.login .uk-card form .uk-form-controls label div, section.method .uk-card form .uk-form-controls label div, section.pass-code .uk-card form .uk-form-controls label div,
+section.new-pass .uk-card form .uk-form-controls label div, section.pass-changed .uk-card form .uk-form-controls label div,
+section.signup-marketer .uk-card form .uk-form-controls label div, section.signup-trader .uk-card form .uk-form-controls label div {
+  border-radius: 12px;
+  border: 1px solid #007bff;
+  width: 100%;
+  padding: 15px 15px;
+}
+section.login .uk-card .pass-changed-content h1, section.login .uk-card .pass-changed-content h3, section.method .uk-card .pass-changed-content h1, section.method .uk-card .pass-changed-content h3, section.pass-code .uk-card .pass-changed-content h1, section.pass-code .uk-card .pass-changed-content h3,
+section.new-pass .uk-card .pass-changed-content h1,
+section.new-pass .uk-card .pass-changed-content h3, section.pass-changed .uk-card .pass-changed-content h1, section.pass-changed .uk-card .pass-changed-content h3,
+section.signup-marketer .uk-card .pass-changed-content h1,
+section.signup-marketer .uk-card .pass-changed-content h3, section.signup-trader .uk-card .pass-changed-content h1, section.signup-trader .uk-card .pass-changed-content h3 {
+  color: #007bff;
+}
+section.login .uk-card .pass-changed-content h1, section.method .uk-card .pass-changed-content h1, section.pass-code .uk-card .pass-changed-content h1,
+section.new-pass .uk-card .pass-changed-content h1, section.pass-changed .uk-card .pass-changed-content h1,
+section.signup-marketer .uk-card .pass-changed-content h1, section.signup-trader .uk-card .pass-changed-content h1 {
+  margin-top: 120px;
+}
+section.login .uk-card .pass-changed-content a, section.method .uk-card .pass-changed-content a, section.pass-code .uk-card .pass-changed-content a,
+section.new-pass .uk-card .pass-changed-content a, section.pass-changed .uk-card .pass-changed-content a,
+section.signup-marketer .uk-card .pass-changed-content a, section.signup-trader .uk-card .pass-changed-content a {
+  margin-top: 50px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+}
+section.login .uk-card .app-main, section.method .uk-card .app-main, section.pass-code .uk-card .app-main,
+section.new-pass .uk-card .app-main, section.pass-changed .uk-card .app-main,
+section.signup-marketer .uk-card .app-main, section.signup-trader .uk-card .app-main {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 640px) {
+  section.login .uk-card .app-main, section.method .uk-card .app-main, section.pass-code .uk-card .app-main,
+  section.new-pass .uk-card .app-main, section.pass-changed .uk-card .app-main,
+  section.signup-marketer .uk-card .app-main, section.signup-trader .uk-card .app-main {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+section.login .uk-card .app-main .app-container, section.method .uk-card .app-main .app-container, section.pass-code .uk-card .app-main .app-container,
+section.new-pass .uk-card .app-main .app-container, section.pass-changed .uk-card .app-main .app-container,
+section.signup-marketer .uk-card .app-main .app-container, section.signup-trader .uk-card .app-main .app-container {
+  border: 1px solid #333;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.login .uk-card .app-main .app-container img, section.method .uk-card .app-main .app-container img, section.pass-code .uk-card .app-main .app-container img,
+section.new-pass .uk-card .app-main .app-container img, section.pass-changed .uk-card .app-main .app-container img,
+section.signup-marketer .uk-card .app-main .app-container img, section.signup-trader .uk-card .app-main .app-container img {
+  margin-right: 5px;
+  width: 40px;
+}
+@media (min-width: 640px) {
+  section.login .uk-card .app-main .app-container img, section.method .uk-card .app-main .app-container img, section.pass-code .uk-card .app-main .app-container img,
+  section.new-pass .uk-card .app-main .app-container img, section.pass-changed .uk-card .app-main .app-container img,
+  section.signup-marketer .uk-card .app-main .app-container img, section.signup-trader .uk-card .app-main .app-container img {
+    margin-right: 15px;
+    width: 50px;
+  }
+}
+section.login .uk-card .app-main .app-container p, section.method .uk-card .app-main .app-container p, section.pass-code .uk-card .app-main .app-container p,
+section.new-pass .uk-card .app-main .app-container p, section.pass-changed .uk-card .app-main .app-container p,
+section.signup-marketer .uk-card .app-main .app-container p, section.signup-trader .uk-card .app-main .app-container p {
+  margin: 0px;
+  color: #333;
+}
+section.login .uk-card .uk-cover-container, section.method .uk-card .uk-cover-container, section.pass-code .uk-card .uk-cover-container,
+section.new-pass .uk-card .uk-cover-container, section.pass-changed .uk-card .uk-cover-container,
+section.signup-marketer .uk-card .uk-cover-container, section.signup-trader .uk-card .uk-cover-container {
+  background-color: #007bff;
+  padding: 0px 30px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-navbar .uk-offcanvas-bar {
+  background-color: #FFF;
+  width: 100vw;
+  margin-top: 80px;
+  overflow: hidden;
+}
+.mobile-navbar .uk-offcanvas-bar li a {
+  background-color: #007bff;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */

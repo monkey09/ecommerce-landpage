@@ -23,19 +23,18 @@
 			</div>
 			<div class="uk-navbar-left">
 				<ul class="uk-navbar-nav uk-visible@m">
-					<!-- <li class="uk-background-secondary tajawal"><a href="update.html">أحمد هاشم</a></li> -->
 					<li class="uk-active">
-						<a href="#">
+						<a href="choose-login.html">
 							<span class="uk-button uk-button-link tajawal">تسجيل دخول</span>
 						</a>
 					</li>
 					<li class="uk-active">
-						<a href="#">
-							<span class="uk-button uk-button-primary tajawal">إنشاء حساب جديد</span>
+						<a href="choose-signup.html">
+							<span class="uk-button uk-button-link tajawal">إنشاء حساب جديد</span>
 						</a>
 					</li>
 				</ul>
-				<a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>
+				<a class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>
 			</div>
 		</nav>
 	</div>
@@ -51,7 +50,7 @@
 					<h3 class="tajawal uk-margin-remove-top uk-margin-large-bottom">
 						ضاعف مبيعاتك الان لو انت تاجر  وحقق دخل عالي وابدا كمسوق
 					</h3>
-					<a href="#" class="tajawal uk-button uk-button-primary">سجل الان</a>
+					<a href="choose-signup.html" class="tajawal uk-button uk-button-primary">سجل الان</a>
 				</div>
 			</div>
 		</div>
@@ -97,7 +96,7 @@
 						<h5 class="tajawal uk-margin-small-top">
 							عملية التسجيل سهلة ومباشرة وتفعيل فوري للحساب
 						</h5>
-						<a href="#" class="tajawal uk-button uk-button-primary">سجل الان</a>
+						<a href="signup-marketer.html" class="tajawal uk-button uk-button-primary">سجل الان</a>
 					</div>
 				</div>
 				<div>
@@ -135,7 +134,7 @@
 						<h5 class="tajawal uk-margin-small-top">
 							اعرض منتجك الي عاوز تسوقه وسيب الباقي علينا 
 						</h5>
-						<a href="#" class="tajawal uk-button uk-button-primary">سجل الان</a>
+						<a href="signup-trader.html" class="tajawal uk-button uk-button-primary">سجل الان</a>
 					</div>
 				</div>
 				<div>
@@ -174,7 +173,7 @@
 						<div class="card-content">
 							<h2 class="tajawal-bold uk-margin-small-bottom">انا مسوق</h2>
 							<h3 class="tajawal uk-margin-remove-top">ارغب بالاشتراك لزيادة دخلي</h3>
-							<a href="#" class="tajawal uk-button uk-button-primary">اشترك كمسوق</a>
+							<a href="signup-marketer.html" class="tajawal uk-button uk-button-primary">اشترك كمسوق</a>
 						</div>
 					</div>
 				</div>
@@ -183,7 +182,7 @@
 						<div class="card-content">
 							<h2 class="tajawal-bold uk-margin-small-bottom">انا تاجر</h2>
 							<h3 class="tajawal uk-margin-remove-top">اريد تحقيق زيادة في مبيعاتي </h3>
-							<a href="#" class="tajawal uk-button uk-button-primary">اشترك كتاجر</a>
+							<a href="signup-trader.html" class="tajawal uk-button uk-button-primary">اشترك كتاجر</a>
 						</div>
 					</div>
 				</div>
@@ -355,6 +354,19 @@
 			<h4 class="tajawal bottom-header uk-text-center">جميع الحقوق محفوظة لدي شركة جيوفاني 2023</h4>
 		</div>
 	</footer>
+
+	<!-- Mobile navbar -->
+	<div id="mobile-nav" uk-offcanvas=" overlay: true" class="mobile-navbar">
+		<div class="uk-offcanvas-bar uk-flex uk-flex-column">
+			<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+				<li class="tajawal-bold" style="margin-bottom:30px;"><a href="choose-login.html" class="uk-button">تسجيل دخول</a></li>
+				<li class="tajawal-bold"><a href="choose-signup.html" class="uk-button">انشاء حساب جديد</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

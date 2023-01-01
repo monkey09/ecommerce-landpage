@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/uikit-rtl.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Jiovani</title>
+</head>
+<body>
+  <!-- Navbar --> 
+	<div class="navbar" uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+		<nav id="nav" class="uk-navbar-container uk-container" uk-navbar>
+			<div class="uk-navbar-right">
+				<a class="uk-navbar-item uk-logo" href="index.html">
+					<img src="images/jiovani.svg" width="80" alt="">
+				</a>
+			</div>
+			<div class="uk-navbar-left">
+				<ul class="uk-navbar-nav uk-visible@m">
+					<li class="uk-active">
+						<a href="choose-login.html">
+							<span class="uk-button uk-button-link tajawal">تسجيل دخول</span>
+						</a>
+					</li>
+					<li class="uk-active">
+						<a href="choose-signup.html">
+							<span class="uk-button uk-button-primary tajawal">إنشاء حساب جديد</span>
+						</a>
+					</li>
+				</ul>
+				<a class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>
+			</div>
+		</nav>
+	</div>
+
+  <!-- Main section -->
+  <section class="main">
+    <div class="uk-container uk-container-small uk-text-center">
+      <div class="main-header">
+        <h1 class="tajawal-bold">جيوفاني</h1>
+        <h4 class="tajawal">هي بوابة دخولك لعالم المال وتحقيق الكثير من الارباح والنجاحات</h4>
+        <h4 class="tajawal">في عالم التجارة الاكترونية</h4>
+        <h3 class="tajawal-bold">ابدا الان معنا وكن جزء من منظومتنا</h3>
+      </div>
+      <div class="uk-child-width-expand@m" uk-grid>
+        <div>
+          <a href="signup-trader.html" class="main-card">
+            <div class="main-card-header-1">
+              <h3 class="tajawal-bold">انا تاجر</h3>
+              <h4 class="tajawal">وارغب في زيادة مبيعاتي مع جيوفاني</h4>
+            </div>
+            <img class="main-img-1" src="images/trader.svg" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="signup-marketer.html" class="main-card">
+            <div class="main-card-header-2">
+              <h3 class="tajawal-bold">انا مسوق</h3>
+              <h4 class="tajawal">وارغب في زيادة دخلي من المبيعات</h4>
+            </div>
+            <img class="main-img-2" src="images/marketer.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+	<!-- Mobile navbar -->
+	<div id="mobile-nav" uk-offcanvas=" overlay: true" class="mobile-navbar">
+		<div class="uk-offcanvas-bar uk-flex uk-flex-column">
+			<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+				<li class="tajawal-bold" style="margin-bottom:30px;"><a href="choose-login.html" class="uk-button">تسجيل دخول</a></li>
+				<li class="tajawal-bold"><a href="choose-signup.html" class="uk-button">انشاء حساب جديد</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
